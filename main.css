@@ -1,0 +1,100 @@
+*, ::after, ::before {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+#seccionPrincipal {
+    min-height: 1200px;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("img/hawaii.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+.textos {
+    position: absolute;
+    top: 500px;
+    width: 750px;
+    right: 10%;
+}
+
+
+.nav-item:hover, .CaC:hover  {
+    transform: scale(1.1);
+    transition: all 0.7s;
+}
+
+.secGrid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+#boton {
+    color: aliceblue;
+    background-color: rgb(115, 214, 1);
+}
+#boton:hover {
+    background-color: rgb(7, 134, 18);
+}
+
+footer {
+    background: linear-gradient(90deg, rgb(10, 22, 44), rgb(5, 39, 102));
+}
+
+footer > ul > li {
+    list-style: none;
+}
+
+footer > ul > li:hover {
+    transform: scale(1.1);
+    transition: all 0.7s;
+}
+
+footer > ul > li > a {
+    text-decoration: none;
+    color: aliceblue;
+}
+
+footer > ul > li > a:hover {
+    color: rgb(212, 213, 214);
+}
+
+@media (max-width: 1200px) {
+    .secGrid {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .textos {
+        display: grid;
+        max-width: 80%;
+        align-items: center;
+        text-align: center;
+    }
+
+
+    .pSecc1 {
+        display: none;
+    }
+}
+
+@media (max-width: 768px) {
+    .cards {
+        display: flex;
+        flex-direction: column;
+        max-width: 400px;
+    }
+
+    .outputs {
+        display: flex;
+        flex-direction: column;
+    }
+
+    footer > ul {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        gap: 20px;
+    }
+}
