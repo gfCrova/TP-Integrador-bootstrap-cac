@@ -93,7 +93,7 @@ footer > ul > li > a:hover {
         gap: 20px;
     }
 
-    .pSecc1 {
-        display: none;
+    .buttons > .btnVerde{
+        margin-top: 15px;
     }
 }
