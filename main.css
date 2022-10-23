@@ -12,6 +12,10 @@
     background-attachment: fixed;
 }
 
+.cards {
+    transition: all 1s;
+}
+
 .textos {
     position: absolute;
     top: 500px;
@@ -37,8 +41,9 @@
     background-color: rgb(7, 134, 18);
 }
 
+
 footer {
-    background: linear-gradient(90deg, rgb(10, 22, 44), rgb(5, 39, 102));
+    background: linear-gradient(45deg, #112936, #1a3f53, #265c79);
 }
 
 footer > ul > li {
